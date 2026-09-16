@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="Tulio Martins - Co-op Work Term Report 3" />
+        <title>Coop Report 3 - Tulio Martins</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+        <style>
+            .navbar {
+                background-color: #1b1e21 !important;
+            }
+            .navbar-toggler {
+                background: none;
+                border: none;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">Tulio Martins</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Work Term Reports</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="coop1.html">Co-op 1: EVERSANA</a></li>
+                                <li><a class="dropdown-item" href="coop2.html">Co-op 2: Quintessence Wealth Partners</a></li>
+                                <li><a class="dropdown-item active" aria-current="page" href="coop3.html">Co-op 3: University of Guelph</a></li>
+                                <!-- <li><a class="dropdown-item" href="coop4.html">Co-op 4</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav-item ms-2 d-flex align-items-center">
+                            <button id="theme-toggle" class="btn btn-sm" 
+                                    style="background: none; border: none; font-size: 1.1rem; cursor: pointer;"
+                                    onclick="toggleTheme()">☀️</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container">
+            <div class="mt-5 mb-5" style="max-width: 820px; margin-left: auto; margin-right: auto;">
+
+                <h1 class="display-5 text-center mb-2">Work Term Report</h1>
+                <h2 class="text-center text-muted fs-4 mb-5">University of Guelph, Undergraduate Research Assistant</h2>
+
+                <h2 id="introduction" class="mt-5 mb-3">Introduction</h2>
+
+                <p>
+                    During the summer of 2026 (May-August), I worked as an undergraduate research assistant under Professor Zeny Feng in the Department of Mathematics and Statistics at the University of Guelph, alongside one other master student. My work was <strong>stepFMR</strong>, an R package for <strong>Finite Mixture Regression (FMR)</strong>, a class of models used when a population is actually made up of several hidden subgroups, each with its own relationship between the predictors and the response. stepFMR implements a stepwise procedure that automatically selects which predictors matter and estimates their effects, and supports several common types of response data. The term was split between building and testing the package, studying the underlying theory, and preparing a conference poster.
+                </p>
+
+                <h2 id="job-description" class="mt-5 mb-3">Job Description</h2>
+                <p>
+                    Most of my time went into developing and testing stepFMR in R: implementing and debugging the core algorithms, testing different initializations, writing unit tests, running simulations, profiling performance, and keeping the documentation and package structure up to date. Alongside the coding, I spent a good amount of time studying the underlying math and statistics to make sure the implementation actually matched the theory.
+                </p>
+                <p>
+                    The main highlight of the term was preparing and presenting a poster at an undergraduate research conference, an event open to the public. I spent about 1–2 weeks consolidating the code, running simulations across three different computers, and repeatedly redesigning and rewriting the poster itself.
+                </p>
+                <div class="row justify-content-center my-4">
+                    <div class="col-auto"><img src="../assets/coop3/dice.jpg" class="img-fluid rounded" style="max-height: 400px;"></div>
+                    <div class="col-auto"><img src="../assets/coop3/presentation.jpg" class="img-fluid rounded" style="max-height: 400px;"></div>
+                </div>
+
+                <h2 id="learning-goals" class="mt-5 mb-3">Goals</h2>
+
+                <p><strong>Goal 1:</strong> Technological Literacy </p>
+                <p>This term deepened my R engineering skills more than pure numerical computing. Building class structures, package infrastructure, and parallelization taught me quirks of R like partial matching and a performance gap between different operating systems.</p>
+
+                <p><strong>Goal 2:</strong> Information Literacy </p>
+                <p>Implementing the core theory meant constantly revisiting papers and notes to confirm what I was doing and that I actually understood them. That process of debugging against the theory taught me more than a first read ever could. In trying to solve some problems that came up, I also ended up discovering new optimization and machine learning algorithms, and clustering methods, through research of my own.</p>
+
+                <p><strong>Goal 3:</strong> Written Communication </p>
+                <p>Preparing our conference poster was the clearest writing growth this term. Rewriting drafts repeatedly with my supervisor and learning to explain the software clearly to a diverse audience helped me know what details to include or cut. A journal paper is expected to come out of this work down the line, and the summarizing and audience-tailoring skills I built through the poster will carry directly into that writing.</p>
+
+                <h2 id="conclusions" class="mt-5 mb-3">Conclusion</h2>
+                <p>
+                    This term pushed my R engineering skills well beyond what I'd built before, from package architecture and parallelization to writing tests and profiling performance, while also deepening how well I understand the statistical theory behind the models I was implementing. Presenting the poster pulled all of that together and sharpened how I explain technical work to people outside the field. stepFMR is open source, and you can check out the code here: <a href="https://github.com/jacksonmitch/stepFMR" target="_blank" rel="noopener">stepFMR on GitHub</a>.
+                </p>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="../js/scripts.js"></script>
+        <script>
+            function toggleTheme() {
+                const html = document.documentElement;
+                const isDark = html.getAttribute('data-bs-theme') === 'dark';
+                html.setAttribute('data-bs-theme', isDark ? 'light' : 'dark');
+                document.getElementById('theme-toggle').textContent = isDark ? '🌙' : '☀️';
+                localStorage.setItem('theme', isDark ? 'light' : 'dark');
+            }
+            // Apply saved preference on load
+            const saved = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-bs-theme', saved);
+            document.addEventListener('DOMContentLoaded', () => {
+                document.getElementById('theme-toggle').textContent = saved === 'dark' ? '☀️' : '🌙';
+            });
+        </script>
+    </body>
+</html>
